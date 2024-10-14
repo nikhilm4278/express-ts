@@ -1,7 +1,7 @@
-const PORT = process.env.PORT || 3001;
+const express = require('express');
+const mongoose = require('mongoose');
 
-app.listen(PORT, () => {
-  console.log("Server Listening on PORT:", PORT);
-});
+const app = express();
+const port = process.env.PORT || 3000;
 
 app.get("/status", (request, response));
